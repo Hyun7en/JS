@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>변수와 자료형</h1>
+    <h2 id="test">변수 선언시 var 뿐만아니라 let, const 이용해서 선언가능</h2>
+
+    <!-- 버전차이, 단점이 있어서 보완하려고 나온거다 -->
+
+    <script>
+        // 변수 선언 
+        var tmp1;
+        let tmp2;
+        const tmp3 = "jiwon";
+
+        var name = "최지원";
+        console.log(name);
+
+        var age = 45;
+        var pi = 3.14;
+        var age = 50;
+
+        /**
+         * let은 var에서 같은이름의 중복생성을 하지 못하게 만든 자료형
+         * 다만 let과 var는 모두 값을 변경하는 것은 가능해
+         */
+
+        let name2 = "최지원";
+        // let name2 = "최지원";
+        // console.log(name2);
+
+        let h2El = document.getElementById("test");
+        h2El = document.getElementById("test2");
+
+        /**
+         * const는 상수를 표현하기위한 자료형
+         * 값을 변경할 수 없다.
+         */
+        const name3 = "김수민";
+        name3 = "jiwon";
+        console.log(name3);
+
+        let h2El2 = document.getElementById("test");
+        h2El2.innerHTML = "??";
+
+        /**
+         * Naming
+         * 1) 일반적으로 영어를 사용하며 문자와 숫자 모두 사용할 수 있다.
+         * 2) 특수문자중에서는 $와 _사용할 수 있다.
+         * 3) 숫자로 변수명을 시작할 수 없다.
+         * 4) 키워드를 변수명으로 사용할 수 없습니다.
+         * var, let, const
+         * 
+         * Naming Type
+         * 
+         * 1) camelCase -> 대부분의 언엉에서 많이 사용하며 단어의 시작하다 대문자로 구분을 해준다.
+         * 2) snake_case -> 파이썬에서 주로 사용하며 단어의 시작마다 _로 구분해준다.
+         */ 
+    </script>
+</body>
+</html>

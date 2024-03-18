@@ -1,3 +1,4 @@
+
 function test(){
-    window.alert("별도로 작성된 js 파일");
+    window.alert("별도로 작성된 js파일");
 }
