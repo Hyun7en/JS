@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수_구매정보_검색 실습문제</title>
+    <style>
+        #area1{
+            border: 1px solid black;
+            width: 500px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Practice4</h1>
+    <fieldset>
+        <legend>구매 정보</legend>
+        <ul>
+            <li>
+                구매자 : <input id="buyer" type="text" placeholder="구매자의 이름을 입력하세요">
+            </li>
+            <li>
+                상품명 : <input id="product_name" type="text" placeholder="구매 상품 명을 입력하세요">
+            </li>
+            <li>
+                가격 : <input id="price" type="text" placeholder="구매 가격을 입력하세요">
+            </li>
+            <li>
+                구매 수량 : <input id="amount" type="text" placeholder="최소 10">
+            </li>
+            <li>
+                납품 등급 : <input id="grade" type="range">
+            </li>
+            <li>
+                기타 사항 : <input id="etc" type="search">
+            </li>
+        </ul>
+    </fieldset>
+
+    <br><br>
+
+    <button onclick="test1();">입력 값 출력하기</button>
+
+    <br><br>
+
+    <div id="area1"></div>
+
+    <script>
+        function test1(){
+         const area1 = document.getElementById("#area1");
+
+         area1.innerHTML += "구매자 명 : " + document.getElementById('buyer') + "<br>";
+         area1.innerHTML += "상품 명 : " + document.getElementById('product_name') + "<br>";
+         area1.innerHTML += "가격 : " + document.getElementById('price') + "<br>";
+         area1.innerHTML += "구매 수량 : " + document.getElementById('amount') + "<br>";
+         area1.innerHTML += "납품등급 : " + document.getElementById('grade') + "<br>";
+         area1.innerHTML += "기타사항 : " + document.getElementById('etc');
+         
+        }
+    </script>
+
+
+
+</body>
+</html>
